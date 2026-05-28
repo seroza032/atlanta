@@ -131,15 +131,18 @@ nav {
 .hero-inner {
   position: relative; z-index: 1;
   max-width: 1100px; margin: 0 auto; width: 100%;
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center;
 }
 
 .eyebrow {
-  display: flex; align-items: center; gap: 14px;
+  display: flex; align-items: center; justify-content: center; gap: 14px;
   font-size: 11px; font-weight: 500;
   letter-spacing: .26em; text-transform: uppercase;
   color: var(--c-gold); margin-bottom: 24px;
 }
 .eyebrow::before { content: ''; display: block; width: 36px; height: 1px; background: var(--c-gold); }
+.eyebrow::after  { content: ''; display: block; width: 36px; height: 1px; background: var(--c-gold); }
 
 .hero-name {
   font-family: 'Cormorant Garamond', serif;
@@ -153,13 +156,12 @@ nav {
 .hero-rule { width: 56px; height: 1px; background: var(--c-gold); margin-bottom: 30px; }
 
 .hero-desc {
-  max-width: 560px;
   font-size: 15px; font-weight: 300;
   color: var(--c-dim); line-height: 1.9;
   margin-bottom: 44px;
 }
 
-.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-bottom: 60px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 16px; margin-bottom: 60px; }
 
 .btn-gold {
   background: var(--c-gold); color: var(--c-bg);
@@ -288,7 +290,8 @@ nav {
   .svc-section.bleed .svc-inner { max-width: none; margin: 0; gap: 0; }
   .svc-section.bleed .svc-content {
     padding: 110px 56px;
-    display: flex; flex-direction: column; justify-content: center;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center;
   }
 }
 
@@ -388,9 +391,11 @@ footer {
   .nav-burger { display: flex; }
   #home { padding: 110px 24px 80px; }
   .svc-section { padding: 80px 24px; }
-  .svc-inner { grid-template-columns: 1fr; gap: 48px; }
+  .svc-inner,
+  .svc-inner.flip { grid-template-columns: 1fr; gap: 48px; }
   .svc-inner.flip .svc-img { order: 0; }
   .svc-section.bleed .svc-img { display: none; }
+  .svc-content { align-items: center; text-align: center; }
   footer { padding: 56px 24px 32px; }
   .footer-contacts { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
