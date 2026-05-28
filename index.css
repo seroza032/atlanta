@@ -201,6 +201,11 @@ nav {
 .hc-value a:hover, .fc-value a:hover { color: var(--c-gold); }
 
 /* ─── SERVICE SECTIONS ─── */
+.svc-content {
+  display: flex; flex-direction: column;
+  align-items: center; text-align: center;
+}
+
 .svc-section {
   padding: 110px 56px;
   position: relative; overflow: hidden;
@@ -219,10 +224,11 @@ nav {
   font-size: 11px; font-weight: 500;
   letter-spacing: .24em; text-transform: uppercase;
   color: var(--c-gold);
-  display: flex; align-items: center; gap: 14px;
+  display: flex; align-items: center; justify-content: center; gap: 14px;
   margin-bottom: 18px;
 }
 .svc-label::before { content: ''; display: block; width: 36px; height: 1px; background: var(--c-gold); }
+.svc-label::after { content: ''; display: block; width: 36px; height: 1px; background: var(--c-gold); }
 
 .svc-icon-wrap {
   width: 52px; height: 52px;
