@@ -401,6 +401,8 @@ footer {
 }
 @media (max-width: 560px) {
   .hero-name { font-size: 48px; }
-  .footer-contacts { grid-template-columns: 1fr; }
+  .footer-contacts { grid-template-columns: 1fr; text-align: center; }
+  .fc-messengers { align-items: center; }
+  .messenger-link { justify-content: center; }
   .hero-contacts { gap: 24px; }
 }
