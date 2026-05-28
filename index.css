@@ -319,35 +319,30 @@ nav {
 /* ─── FOOTER ─── */
 footer {
   background: var(--c-bg);
+  border-top: 1px solid rgba(200,168,75,.18);
   padding: 70px 56px 40px;
 }
-.footer-grid {
+.footer-brand-section {
   max-width: 1100px; margin: 0 auto;
-  display: grid; grid-template-columns: 1.5fr 0.9fr 0.8fr 1.5fr;
-  gap: 56px; margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  margin-bottom: 48px;
 }
-
 .footer-brand {
   font-family: 'Cormorant Garamond', serif;
   font-size: 28px; font-weight: 700;
-  color: var(--c-gold); margin-bottom: 14px;
+  color: var(--c-gold); margin-bottom: 12px;
 }
 .footer-desc {
   font-size: 13px; font-weight: 300;
   color: var(--c-muted); line-height: 1.75;
+  max-width: 520px;
 }
-
-.footer-col-title {
-  font-size: 10px; font-weight: 500;
-  letter-spacing: .2em; text-transform: uppercase;
-  color: var(--c-gold); margin-bottom: 20px;
+.footer-contacts {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 40px; margin-bottom: 48px;
 }
-.footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.footer-links a {
-  font-size: 13px; color: var(--c-muted);
-  text-decoration: none; transition: color .2s;
-}
-.footer-links a:hover { color: var(--c-white); }
 
 .fc-item { margin-bottom: 18px; }
 .fc-label { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--c-gold); }
@@ -389,10 +384,10 @@ footer {
   .svc-inner.flip .svc-img { order: 0; }
   .svc-section.bleed .svc-img { display: none; }
   footer { padding: 56px 24px 32px; }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .footer-contacts { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
 @media (max-width: 560px) {
   .hero-name { font-size: 48px; }
-  .footer-grid { grid-template-columns: 1fr; }
+  .footer-contacts { grid-template-columns: 1fr; }
   .hero-contacts { gap: 24px; }
 }
