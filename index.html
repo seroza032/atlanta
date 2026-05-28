@@ -1,224 +1,272 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Avetar Logistic</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avetar Logistic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- ═══ NAV ═══ -->
-  <nav>
+<!-- ═══ NAV ═══ -->
+<nav>
     <a class="nav-logo" href="#home">Avetar Logistic</a>
     <ul class="nav-links">
-      <li><a href="#logistik" data-i18n="nav.logistics">Logistik</a></li>
-      <li><a href="#zoll" data-i18n="nav.customs">Zoll</a></li>
-      <li><a href="#lager" data-i18n="nav.warehouse">Lager</a></li>
-      <li><a href="#handel" data-i18n="nav.trade">Handel</a></li>
-      <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+        <li><a href="#logistik" data-i18n="nav.logistics">Logistik</a></li>
+        <li><a href="#zoll" data-i18n="nav.customs">Zoll</a></li>
+        <li><a href="#lager" data-i18n="nav.warehouse">Lager</a></li>
+        <li><a href="#handel" data-i18n="nav.trade">Handel</a></li>
+        <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
     </ul>
     <div class="lang-switch" id="langSwitch" role="button" aria-label="Sprache wechseln">
-      <span class="lang-opt active" data-lang-opt="de">DE</span>
-      <span class="lang-sep"></span>
-      <span class="lang-opt" data-lang-opt="en">EN</span>
+        <span class="lang-opt active" data-lang-opt="de">DE</span>
+        <span class="lang-sep"></span>
+        <span class="lang-opt" data-lang-opt="en">EN</span>
     </div>
     <div class="nav-burger" id="burger" aria-label="Menu">
-      <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
     </div>
-  </nav>
+</nav>
 
-  <div class="nav-mobile" id="mobileMenu">
+<div class="nav-mobile" id="mobileMenu">
     <a href="#logistik" data-i18n="nav.logistics">Logistik</a>
     <a href="#zoll" data-i18n="nav.customs">Zoll</a>
     <a href="#lager" data-i18n="nav.warehouse">Lager</a>
     <a href="#handel" data-i18n="nav.trade">Handel</a>
     <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
-  </div>
+</div>
 
-  <!-- ═══ HERO ═══ -->
-  <section id="home">
+<!-- ═══ HERO ═══ -->
+<section id="home">
     <div class="hero-grid-bg"></div>
     <div class="hero-glow"></div>
     <div class="hero-inner">
-      <p class="eyebrow" data-i18n="hero.eyebrow">Ihr internationaler Partner</p>
-      <h1 class="hero-name">Avetar Logistic GMBH</h1>
-      <div class="hero-rule"></div>
-      <p class="hero-desc" data-i18n="hero.desc">
-        Wir sind Ihr zuverlässiger Partner für internationale Logistiklösungen, professionelle Zollabwicklung, moderne Lagerdienstleistungen sowie den Handel mit hochwertigen Lebens- und Genussmitteln aus Europa und der ganzen Welt.
-      </p>
-      <div class="hero-actions">
-        <a href="#logistik" class="btn-gold" data-i18n="hero.btn1">Unsere Leistungen</a>
-        <a href="#kontakt" class="btn-ghost" data-i18n="hero.btn2">Kontakt aufnehmen</a>
-      </div>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Ihr internationaler Partner</p>
+        <h1 class="hero-name">Avetar Logistic GMBH</h1>
+        <div class="hero-rule"></div>
+        <p class="hero-desc" data-i18n="hero.desc">
+            Wir sind Ihr zuverlässiger Partner für internationale Logistiklösungen, professionelle Zollabwicklung,
+            moderne Lagerdienstleistungen sowie den Handel mit hochwertigen Lebens- und Genussmitteln aus Europa und der
+            ganzen Welt.
+        </p>
+        <div class="hero-actions">
+            <a href="#logistik" class="btn-gold" data-i18n="hero.btn1">Unsere Leistungen</a>
+            <a href="#kontakt" class="btn-ghost" data-i18n="hero.btn2">Kontakt aufnehmen</a>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- ═══ LOGISTIK ═══ -->
-  <section class="svc-section bleed" id="logistik" data-screen-label="01 Logistik">
+<!-- ═══ LOGISTIK ═══ -->
+<section class="svc-section bleed" id="logistik" data-screen-label="01 Logistik">
     <div class="svc-inner">
-      <div class="svc-content">
-        <p class="svc-label" data-i18n="s1.label">LOGISTIK</p>
-        <div class="svc-icon-wrap">
-          <img src="icons/logistik.svg" alt="" width="24" height="24">
+        <div class="svc-content">
+            <p class="svc-label" data-i18n="s1.label">LOGISTIK</p>
+            <div class="svc-icon-wrap">
+                <img src="icons/logistik.svg" alt="" width="24" height="24">
+            </div>
+            <h2 class="svc-title" data-i18n="s1.title">Logistik&shy;dienstleistungen</h2>
+            <p class="svc-subtitle" data-i18n="s1.sub">Logistics Services</p>
+            <div class="svc-expand" id="s1Expand">
+                <div>
+                    <p class="svc-text" data-i18n="s1.text">
+                        Wir bieten umfassende Logistiklösungen für nationale und internationale Güterbeförderung. Von
+                        der
+                        Planung bis zur Lieferung — wir sorgen für einen reibungslosen Transport Ihrer Waren auf dem
+                        schnellsten und sichersten Weg.
+                    </p>
+                    <ul class="feat-list">
+                        <li data-i18n="s1.f1">Internationale Frachttransporte (Luft, See, Straße, Schiene)</li>
+                        <li data-i18n="s1.f2">Vollständige Lieferkettenverwaltung</li>
+                        <li data-i18n="s1.f3">Express- und Standardlieferungen</li>
+                        <li data-i18n="s1.f4">Echtzeit-Sendungsverfolgung</li>
+                        <li data-i18n="s1.f5">Gefahrgut- und Sondertransporte</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn-readmore" data-section="s1" data-i18n="s1.readmore">Mehr lesen</button>
         </div>
-        <h2 class="svc-title" data-i18n="s1.title">Logistik&shy;dienstleistungen</h2>
-        <p class="svc-subtitle" data-i18n="s1.sub">Logistics Services</p>
-        <p class="svc-text" data-i18n="s1.text">
-          Wir bieten umfassende Logistiklösungen für nationale und internationale Güterbeförderung. Von der Planung bis zur Lieferung — wir sorgen für einen reibungslosen Transport Ihrer Waren auf dem schnellsten und sichersten Weg.
-        </p>
-        <ul class="feat-list">
-          <li data-i18n="s1.f1">Internationale Frachttransporte (Luft, See, Straße, Schiene)</li>
-          <li data-i18n="s1.f2">Vollständige Lieferkettenverwaltung</li>
-          <li data-i18n="s1.f3">Express- und Standardlieferungen</li>
-          <li data-i18n="s1.f4">Echtzeit-Sendungsverfolgung</li>
-          <li data-i18n="s1.f5">Gefahrgut- und Sondertransporte</li>
-        </ul>
-      </div>
-      <div class="svc-img">
-        <img src="assets/logistik.jpg" alt="Logistik">
-      </div>
+        <div class="svc-img">
+            <img src="assets/logistik.jpg" alt="Logistik">
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- ═══ ZOLL ═══ -->
-  <section class="svc-section bleed" id="zoll" data-screen-label="02 Zoll">
+<!-- ═══ ZOLL ═══ -->
+<section class="svc-section bleed" id="zoll" data-screen-label="02 Zoll">
     <div class="svc-inner flip">
-      <div class="svc-content">
-        <p class="svc-label" data-i18n="s2.label">ZOLLABFERTIGUNG</p>
-        <div class="svc-icon-wrap">
-          <img src="icons/zoll.svg" alt="" width="24" height="24">
+        <div class="svc-content">
+            <p class="svc-label" data-i18n="s2.label">ZOLLABFERTIGUNG</p>
+            <div class="svc-icon-wrap">
+                <img src="icons/zoll.svg" alt="" width="24" height="24">
+            </div>
+            <h2 class="svc-title" data-i18n="s2.title">Zoll&shy;dienst&shy;leistungen</h2>
+            <p class="svc-subtitle" data-i18n="s2.sub">Customs Services</p>
+            <div class="svc-expand" id="s2Expand">
+                <div>
+                    <p class="svc-text" data-i18n="s2.text">
+                        Unsere erfahrenen Zollexperten übernehmen die gesamte Zollabwicklung für Ihre Ein- und
+                        Ausfuhren.
+                        Wir sorgen für eine schnelle, korrekte und rechtssichere Abwicklung aller Zollformalitäten.
+                    </p>
+                    <ul class="feat-list">
+                        <li data-i18n="s2.f1">Zollanmeldung und vollständige Zollabwicklung</li>
+                        <li data-i18n="s2.f2">Vorbereitung und Prüfung aller Zolldokumente</li>
+                        <li data-i18n="s2.f3">Tarifklassifizierung und Ursprungsbestimmung</li>
+                        <li data-i18n="s2.f4">Einhaltung internationaler Handelsvorschriften</li>
+                        <li data-i18n="s2.f5">Beratung zu Zollverfahren und Erleichterungen</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn-readmore" data-section="s2" data-i18n="s2.readmore">Mehr lesen</button>
         </div>
-        <h2 class="svc-title" data-i18n="s2.title">Zoll&shy;dienst&shy;leistungen</h2>
-        <p class="svc-subtitle" data-i18n="s2.sub">Customs Services</p>
-        <p class="svc-text" data-i18n="s2.text">
-          Unsere erfahrenen Zollexperten übernehmen die gesamte Zollabwicklung für Ihre Ein- und Ausfuhren. Wir sorgen für eine schnelle, korrekte und rechtssichere Abwicklung aller Zollformalitäten.
-        </p>
-        <ul class="feat-list">
-          <li data-i18n="s2.f1">Zollanmeldung und vollständige Zollabwicklung</li>
-          <li data-i18n="s2.f2">Vorbereitung und Prüfung aller Zolldokumente</li>
-          <li data-i18n="s2.f3">Tarifklassifizierung und Ursprungsbestimmung</li>
-          <li data-i18n="s2.f4">Einhaltung internationaler Handelsvorschriften</li>
-          <li data-i18n="s2.f5">Beratung zu Zollverfahren und Erleichterungen</li>
-        </ul>
-      </div>
-      <div class="svc-img">
-        <img src="assets/zoll.jpg" alt="Zollabfertigung">
-      </div>
+        <div class="svc-img">
+            <img src="assets/zoll.jpg" alt="Zollabfertigung">
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- ═══ LAGER ═══ -->
-  <section class="svc-section bleed" id="lager" data-screen-label="03 Lager">
+<!-- ═══ LAGER ═══ -->
+<section class="svc-section bleed" id="lager" data-screen-label="03 Lager">
     <div class="svc-inner">
-      <div class="svc-content">
-        <p class="svc-label" data-i18n="s3.label">LAGERDIENSTLEISTUNGEN</p>
-        <div class="svc-icon-wrap">
-          <img src="icons/lager.svg" alt="" width="24" height="24">
+        <div class="svc-content">
+            <p class="svc-label" data-i18n="s3.label">LAGERDIENSTLEISTUNGEN</p>
+            <div class="svc-icon-wrap">
+                <img src="icons/lager.svg" alt="" width="24" height="24">
+            </div>
+            <h2 class="svc-title" data-i18n="s3.title">Lager&shy;dienst&shy;leistungen</h2>
+            <p class="svc-subtitle" data-i18n="s3.sub">Warehouse Services</p>
+            <div class="svc-expand" id="s3Expand">
+                <div>
+                    <p class="svc-text" data-i18n="s3.text">
+                        Unsere modernen Lagerflächen bieten sichere, effiziente und flexible Lagerlösungen für alle
+                        Arten
+                        von Waren. Wir kümmern uns um die professionelle Einlagerung, Verwaltung und Distribution Ihrer
+                        Güter.
+                    </p>
+                    <ul class="feat-list">
+                        <li data-i18n="s3.f1">Sichere und moderne Lagerflächen</li>
+                        <li data-i18n="s3.f2">Temperaturkontrollierte Lagerbereiche</li>
+                        <li data-i18n="s3.f3">Professionelle Bestandsverwaltung</li>
+                        <li data-i18n="s3.f4">Kommissionierung, Verpackung und Versand</li>
+                        <li data-i18n="s3.f5">Flexible Lösungen für Kurz- und Langzeitlagerung</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn-readmore" data-section="s3" data-i18n="s3.readmore">Mehr lesen</button>
         </div>
-        <h2 class="svc-title" data-i18n="s3.title">Lager&shy;dienst&shy;leistungen</h2>
-        <p class="svc-subtitle" data-i18n="s3.sub">Warehouse Services</p>
-        <p class="svc-text" data-i18n="s3.text">
-          Unsere modernen Lagerflächen bieten sichere, effiziente und flexible Lagerlösungen für alle Arten von Waren. Wir kümmern uns um die professionelle Einlagerung, Verwaltung und Distribution Ihrer Güter.
-        </p>
-        <ul class="feat-list">
-          <li data-i18n="s3.f1">Sichere und moderne Lagerflächen</li>
-          <li data-i18n="s3.f2">Temperaturkontrollierte Lagerbereiche</li>
-          <li data-i18n="s3.f3">Professionelle Bestandsverwaltung</li>
-          <li data-i18n="s3.f4">Kommissionierung, Verpackung und Versand</li>
-          <li data-i18n="s3.f5">Flexible Lösungen für Kurz- und Langzeitlagerung</li>
-        </ul>
-      </div>
-      <div class="svc-img">
-        <img src="assets/lager.jpg" alt="Lagerdienstleistungen">
-      </div>
+        <div class="svc-img">
+            <img src="assets/lager.jpg" alt="Lagerdienstleistungen">
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- ═══ HANDEL ═══ -->
-  <section class="svc-section bleed" id="handel" data-screen-label="04 Handel">
+<!-- ═══ HANDEL ═══ -->
+<section class="svc-section bleed" id="handel" data-screen-label="04 Handel">
     <div class="svc-inner flip">
-      <div class="svc-content">
-        <p class="svc-label" data-i18n="s4.label">HANDEL</p>
-        <div class="svc-icon-wrap">
-          <img src="icons/handel.svg" alt="" width="24" height="24">
+        <div class="svc-content">
+            <p class="svc-label" data-i18n="s4.label">HANDEL</p>
+            <div class="svc-icon-wrap">
+                <img src="icons/handel.svg" alt="" width="24" height="24">
+            </div>
+            <h2 class="svc-title" data-i18n="s4.title">Alkohol &amp; Lebens&shy;mittel&shy;handel</h2>
+            <p class="svc-subtitle" data-i18n="s4.sub">Alcohol &amp; Food Trade</p>
+            <div class="svc-expand" id="s4Expand">
+                <div>
+                    <p class="svc-text" data-i18n="s4.text">
+                        Wir importieren und vertreiben hochwertige Alkoholika und Lebensmittel aus Europa und der ganzen
+                        Welt. Von erlesenen europäischen Weinen und Spirituosen bis hin zu exklusiven Delikatessen — wir
+                        bringen die besten Produkte zu Ihnen.
+                    </p>
+                    <ul class="feat-list">
+                        <li data-i18n="s4.f1">Europäische Weine, Spirituosen und Biere</li>
+                        <li data-i18n="s4.f2">Exklusive Lebensmittelimporte aus aller Welt</li>
+                        <li data-i18n="s4.f3">Groß- und Einzelhandel</li>
+                        <li data-i18n="s4.f4">Maßgeschneiderte Sortimentsgestaltung</li>
+                        <li data-i18n="s4.f5">Zuverlässige Lieferketten und erstklassige Qualität</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn-readmore" data-section="s4" data-i18n="s4.readmore">Mehr lesen</button>
         </div>
-        <h2 class="svc-title" data-i18n="s4.title">Alkohol &amp; Lebens&shy;mittel&shy;handel</h2>
-        <p class="svc-subtitle" data-i18n="s4.sub">Alcohol &amp; Food Trade</p>
-        <p class="svc-text" data-i18n="s4.text">
-          Wir importieren und vertreiben hochwertige Alkoholika und Lebensmittel aus Europa und der ganzen Welt. Von erlesenen europäischen Weinen und Spirituosen bis hin zu exklusiven Delikatessen — wir bringen die besten Produkte zu Ihnen.
-        </p>
-        <ul class="feat-list">
-          <li data-i18n="s4.f1">Europäische Weine, Spirituosen und Biere</li>
-          <li data-i18n="s4.f2">Exklusive Lebensmittelimporte aus aller Welt</li>
-          <li data-i18n="s4.f3">Groß- und Einzelhandel</li>
-          <li data-i18n="s4.f4">Maßgeschneiderte Sortimentsgestaltung</li>
-          <li data-i18n="s4.f5">Zuverlässige Lieferketten und erstklassige Qualität</li>
-        </ul>
-      </div>
-      <div class="svc-img">
-        <img src="assets/handel.jpg" alt="Handel">
-      </div>
+        <div class="svc-img">
+            <img src="assets/handel.jpg" alt="Handel">
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- ═══ FOOTER / KONTAKT ═══ -->
-  <footer id="kontakt">
+<!-- ═══ FOOTER / KONTAKT ═══ -->
+<footer id="kontakt">
     <div class="footer-grid">
-      <div>
-        <div class="footer-brand">Avetar Logistic GMBH</div>
-        <p class="footer-desc" data-i18n="ft.desc">
-          Ihr zuverlässiger Partner für Logistik, Zollabwicklung, Lagerdienstleistungen und internationalen Handel aus Europa und der Welt.
-        </p>
-      </div>
-      <div>
-        <p class="footer-col-title" data-i18n="ft.services">Leistungen</p>
-        <ul class="footer-links">
-          <li><a href="#logistik" data-i18n="nav.logistics">Logistik</a></li>
-          <li><a href="#zoll" data-i18n="nav.customs">Zoll</a></li>
-          <li><a href="#lager" data-i18n="nav.warehouse">Lager</a></li>
-          <li><a href="#handel" data-i18n="nav.trade">Handel</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-col-title" data-i18n="ft.company">Unternehmen</p>
-        <ul class="footer-links">
-          <li><a href="#home" data-i18n="ft.about">Über uns</a></li>
-          <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-col-title" data-i18n="nav.contact">Kontakt</p>
-        <div class="fc-item">
-          <div class="fc-label" data-i18n="hero.tel">Telefon</div>
-          <div class="fc-value">
-            <a href="tel:+49 34298-730012">+49 34298-730012</a>
-            <a href="tel:+49 34298-730013">+49 34298-730013</a>
-            <a href="tel:+49 34298-730011">+49 34298-730011</a>
-            <a href="tel:+49 34298-730010">+49 34298-730010</a>
-          </div>
+        <div>
+            <p class="footer-col-title" data-i18n="nav.contact">Kontakt</p>
+            <div class="fc-item">
+                <div class="fc-label" data-i18n="hero.tel">Telefon</div>
+                <div class="fc-value">
+                    <a href="tel:+4934298730012">+49 34298-730012</a>
+                    <a href="tel:+4934298730013">+49 34298-730013</a>
+                    <a href="tel:+4934298730011">+49 34298-730011</a>
+                    <a href="tel:+4934298730010">+49 34298-730010</a>
+                </div>
+            </div>
+            <div class="fc-item">
+                <div class="fc-label">Messenger</div>
+                <div class="fc-value fc-messengers">
+                    <a href="https://www.whatsapp.com/" class="messenger-link" target="_blank" rel="noopener">
+                        <span class="messenger-icon icon-whatsapp" aria-hidden="true"></span>
+                        WhatsApp
+                    </a>
+                    <a href="https://www.viber.com/" class="messenger-link" target="_blank" rel="noopener">
+                        <span class="messenger-icon icon-viber" aria-hidden="true"></span>
+                        Viber
+                    </a>
+                </div>
+            </div>
+            <div class="fc-item">
+                <div class="fc-label" data-i18n="hero.email">E-Mail</div>
+                <div class="fc-value"><a href="mailto:EMAIL_PLACEHOLDER">email@mail.com</a></div>
+            </div>
+            <div class="fc-item">
+                <div class="fc-label" data-i18n="hero.addr">Adresse</div>
+                <div class="fc-value">Deutschland, D-04425, Taucha,
+                    Pönitzer Weg 2,
+                    Büro 221-222, Lagerung 4-a
+                </div>
+            </div>
         </div>
-        <div class="fc-item">
-          <div class="fc-label" data-i18n="hero.fax">Fax</div>
-          <div class="fc-value"><a href="tel:+4934298730020">+49 34298-730020</a></div>
+        <div>
+            <p class="footer-col-title" data-i18n="ft.services">Leistungen</p>
+            <ul class="footer-links">
+                <li><a href="#logistik" data-i18n="nav.logistics">Logistik</a></li>
+                <li><a href="#zoll" data-i18n="nav.customs">Zoll</a></li>
+                <li><a href="#lager" data-i18n="nav.warehouse">Lager</a></li>
+                <li><a href="#handel" data-i18n="nav.trade">Handel</a></li>
+            </ul>
         </div>
-        <div class="fc-item">
-          <div class="fc-label" data-i18n="hero.addr">Adresse</div>
-          <div class="fc-value">Deutschland, D-04425, Taucha,
-            Pönitzer Weg 2,
-            Büro 221-222, Lagerung 4-a</div>
+        <div>
+            <p class="footer-col-title" data-i18n="ft.company">Unternehmen</p>
+            <ul class="footer-links">
+                <li><a href="#home" data-i18n="ft.about">Über uns</a></li>
+            </ul>
         </div>
-      </div>
+
+        <div>
+            <div class="footer-brand">Avetar Logistic GMBH</div>
+            <p class="footer-desc" data-i18n="ft.desc">
+                Ihr zuverlässiger Partner für Logistik, Zollabwicklung, Lagerdienstleistungen und internationalen Handel
+                aus Europa und der Welt.
+            </p>
+        </div>
     </div>
     <div class="footer-bottom">
-      <p data-i18n="ft.rights">© 2025 Avetar Logistic GMBH. Alle Rechte vorbehalten.</p>
-      <p style="letter-spacing:.08em;" data-i18n="ft.tagline">Logistik · Zoll · Lager · Handel</p>
+        <p data-i18n="ft.rights">© 2025 Avetar Logistic GMBH. Alle Rechte vorbehalten.</p>
+        <p style="letter-spacing:.08em;" data-i18n="ft.tagline">Logistik · Zoll · Lager · Handel</p>
     </div>
-  </footer>
+</footer>
 
-  <script src="main.js" defer></script>
+<script src="main.js" defer></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ const translations = {
     'hero.btn1':     'Unsere Leistungen',
     'hero.btn2':     'Kontakt aufnehmen',
     'hero.tel':      'Telefon',
-    'hero.fax':      'Fax',
+    'hero.email':    'E-Mail',
     'hero.addr':     'Adresse',
     's1.label':  'LOGISTIK',
     's1.title':  'Logistik­dienstleistungen',
@@ -20,7 +20,9 @@ const translations = {
     's1.f2': 'Vollständige Lieferkettenverwaltung',
     's1.f3': 'Express- und Standardlieferungen',
     's1.f4': 'Echtzeit-Sendungsverfolgung',
-    's1.f5': 'Gefahrgut- und Sondertransporte',
+    's1.f5':       'Gefahrgut- und Sondertransporte',
+    's1.readmore': 'Mehr lesen',
+    's1.readless': 'Weniger lesen',
     's2.label':  'ZOLLABFERTIGUNG',
     's2.title':  'Zoll­dienst­leistungen',
     's2.sub':    'Customs Services',
@@ -29,7 +31,9 @@ const translations = {
     's2.f2': 'Vorbereitung und Prüfung aller Zolldokumente',
     's2.f3': 'Tarifklassifizierung und Ursprungsbestimmung',
     's2.f4': 'Einhaltung internationaler Handelsvorschriften',
-    's2.f5': 'Beratung zu Zollverfahren und Erleichterungen',
+    's2.f5':       'Beratung zu Zollverfahren und Erleichterungen',
+    's2.readmore': 'Mehr lesen',
+    's2.readless': 'Weniger lesen',
     's3.label':  'LAGERDIENSTLEISTUNGEN',
     's3.title':  'Lager­dienst­leistungen',
     's3.sub':    'Warehouse Services',
@@ -38,7 +42,9 @@ const translations = {
     's3.f2': 'Temperaturkontrollierte Lagerbereiche',
     's3.f3': 'Professionelle Bestandsverwaltung',
     's3.f4': 'Kommissionierung, Verpackung und Versand',
-    's3.f5': 'Flexible Lösungen für Kurz- und Langzeitlagerung',
+    's3.f5':       'Flexible Lösungen für Kurz- und Langzeitlagerung',
+    's3.readmore': 'Mehr lesen',
+    's3.readless': 'Weniger lesen',
     's4.label':  'HANDEL',
     's4.title':  'Alkohol & Lebens­mittel­handel',
     's4.sub':    'Alcohol & Food Trade',
@@ -47,7 +53,9 @@ const translations = {
     's4.f2': 'Exklusive Lebensmittelimporte aus aller Welt',
     's4.f3': 'Groß- und Einzelhandel',
     's4.f4': 'Maßgeschneiderte Sortimentsgestaltung',
-    's4.f5': 'Zuverlässige Lieferketten und erstklassige Qualität',
+    's4.f5':        'Zuverlässige Lieferketten und erstklassige Qualität',
+    's4.readmore':  'Mehr lesen',
+    's4.readless':  'Weniger lesen',
     'ft.desc':     'Ihr zuverlässiger Partner für Logistik, Zollabwicklung, Lagerdienstleistungen und internationalen Handel aus Europa und der Welt.',
     'ft.services': 'Leistungen',
     'ft.company':  'Unternehmen',
@@ -66,7 +74,7 @@ const translations = {
     'hero.btn1':     'Our Services',
     'hero.btn2':     'Get in Touch',
     'hero.tel':      'Phone',
-    'hero.fax':      'Fax',
+    'hero.email':    'E-Mail',
     'hero.addr':     'Address',
     's1.label':  'Logistics Services',
     's1.title':  'Logistics Services',
@@ -76,7 +84,9 @@ const translations = {
     's1.f2': 'End-to-end supply chain management',
     's1.f3': 'Express and standard deliveries',
     's1.f4': 'Real-time shipment tracking',
-    's1.f5': 'Hazardous goods and special transport',
+    's1.f5':       'Hazardous goods and special transport',
+    's1.readmore': 'Read more',
+    's1.readless': 'Show less',
     's2.label':  'Customs Services',
     's2.title':  'Customs Services',
     's2.sub':    'Zolldienstleistungen',
@@ -85,7 +95,9 @@ const translations = {
     's2.f2': 'Preparation and review of all customs documents',
     's2.f3': 'Tariff classification and origin determination',
     's2.f4': 'Compliance with international trade regulations',
-    's2.f5': 'Advisory on customs procedures and facilitations',
+    's2.f5':       'Advisory on customs procedures and facilitations',
+    's2.readmore': 'Read more',
+    's2.readless': 'Show less',
     's3.label':  'Warehouse Services',
     's3.title':  'Warehouse Services',
     's3.sub':    'Lagerdienstleistungen',
@@ -94,7 +106,9 @@ const translations = {
     's3.f2': 'Temperature-controlled storage areas',
     's3.f3': 'Professional inventory management',
     's3.f4': 'Picking, packing, and shipping',
-    's3.f5': 'Flexible solutions for short- and long-term storage',
+    's3.f5':       'Flexible solutions for short- and long-term storage',
+    's3.readmore': 'Read more',
+    's3.readless': 'Show less',
     's4.label':  'Alcohol & Food Trade',
     's4.title':  'Alcohol & Food Trade',
     's4.sub':    'Alkohol & Lebensmittelhandel',
@@ -103,7 +117,9 @@ const translations = {
     's4.f2': 'Exclusive food imports from around the world',
     's4.f3': 'Wholesale and retail trade',
     's4.f4': 'Customized product range design',
-    's4.f5': 'Reliable supply chains and premium quality',
+    's4.f5':        'Reliable supply chains and premium quality',
+    's4.readmore':  'Read more',
+    's4.readless':  'Show less',
     'ft.desc':     'Your reliable partner for logistics, customs clearance, warehousing services, and international trade from Europe and the world.',
     'ft.services': 'Services',
     'ft.company':  'Company',
@@ -153,6 +169,18 @@ const io = new IntersectionObserver(entries => {
   });
 }, { rootMargin: '-40% 0px -55% 0px' });
 document.querySelectorAll('section[id], footer[id]').forEach(s => io.observe(s));
+
+/* Service section read-more toggles */
+document.querySelectorAll('.btn-readmore').forEach(btn => {
+  const section = btn.dataset.section;
+  const expand = document.getElementById(section + 'Expand');
+  btn.addEventListener('click', () => {
+    const isOpen = expand.classList.toggle('open');
+    const key = isOpen ? section + '.readless' : section + '.readmore';
+    btn.setAttribute('data-i18n', key);
+    btn.innerHTML = translations[currentLang][key];
+  });
+});
 
 /* Nav shadow on scroll */
 const nav = document.querySelector('nav');

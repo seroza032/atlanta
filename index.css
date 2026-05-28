@@ -272,7 +272,7 @@ nav {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(7,16,31,.65), rgba(7,16,31,.8));
+  background: linear-gradient(rgba(7,16,31,.7), rgba(7,16,31,.8));
   pointer-events: none;
 }
 @media (min-width: 961px) {
@@ -284,27 +284,57 @@ nav {
   }
 }
 
+/* ─── HANDEL EXPAND ─── */
+.svc-expand {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows .45s cubic-bezier(.4,0,.2,1),
+              opacity .4s cubic-bezier(.4,0,.2,1);
+}
+.svc-expand > div { overflow: hidden; }
+.svc-expand.open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+.btn-readmore {
+  margin-top: 24px;
+  background: transparent;
+  border: 1px solid var(--c-gold);
+  color: var(--c-gold);
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: background .25s, color .25s;
+}
+.btn-readmore:hover {
+  background: var(--c-gold);
+  color: var(--c-bg);
+}
+
 /* ─── FOOTER ─── */
 footer {
   background: var(--c-bg);
-  border-top: 1px solid rgba(200,168,75,.18);
   padding: 70px 56px 40px;
 }
 .footer-grid {
   max-width: 1100px; margin: 0 auto;
-  display: grid; grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  display: grid; grid-template-columns: 1.5fr 0.9fr 0.8fr 1.5fr;
   gap: 56px; margin-bottom: 48px;
 }
 
 .footer-brand {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 26px; font-weight: 700;
+  font-size: 28px; font-weight: 700;
   color: var(--c-gold); margin-bottom: 14px;
 }
 .footer-desc {
   font-size: 13px; font-weight: 300;
   color: var(--c-muted); line-height: 1.75;
-  max-width: 270px;
 }
 
 .footer-col-title {
@@ -322,6 +352,22 @@ footer {
 .fc-item { margin-bottom: 18px; }
 .fc-label { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--c-gold); }
 .fc-value { font-size: 13px; color: var(--c-dim); margin-top: 3px; }
+.fc-messengers { display: flex; flex-direction: column; gap: 12px; }
+.messenger-link {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 15px; color: var(--c-dim);
+  text-decoration: none; transition: color .2s;
+}
+.messenger-link:hover { color: var(--c-gold); }
+.messenger-icon {
+  display: inline-block; width: 18px; height: 18px; flex-shrink: 0;
+  background-color: currentColor;
+  -webkit-mask-size: contain; mask-size: contain;
+  -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+  -webkit-mask-position: center; mask-position: center;
+}
+.icon-whatsapp { -webkit-mask-image: url('icons/whatsapp.svg'); mask-image: url('icons/whatsapp.svg'); }
+.icon-viber    { -webkit-mask-image: url('icons/viber.svg');    mask-image: url('icons/viber.svg'); }
 
 .footer-bottom {
   max-width: 1100px; margin: 0 auto;
