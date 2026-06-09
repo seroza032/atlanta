@@ -258,7 +258,8 @@ nav {
   margin-bottom: 32px;
 }
 
-.feat-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.feat-list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; align-self: stretch; text-align: left; }
+.feat-list + .svc-text { margin-top: 0; }
 .feat-list li {
   display: flex; align-items: baseline; gap: 14px;
   font-size: 13.5px; color: var(--c-dim);
@@ -358,6 +359,12 @@ footer {
 .fc-item { margin-bottom: 18px; }
 .fc-label { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--c-gold); }
 .fc-value { font-size: 13px; color: var(--c-dim); margin-top: 3px; }
+.fc-value a.link-wa  { display: none; }
+.fc-value a.link-tel { display: block; }
+@media (hover: hover) and (pointer: fine) {
+  .fc-value a.link-tel { display: none; }
+  .fc-value a.link-wa  { display: block; }
+}
 .fc-messengers { display: flex; flex-direction: column; gap: 12px; }
 .messenger-link {
   display: flex; align-items: center; gap: 10px;
